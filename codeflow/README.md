@@ -1,6 +1,6 @@
 # **Projekt: User Card Evolution**
 
-Ein schrittweises Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch verbessert wird.
+Ein Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch verbessert wird.
 
 ---
 
