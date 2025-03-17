@@ -12,7 +12,7 @@ Ein einfaches Web-Projekt, bei dem eine `div`-Box schrittweise optisch verbesser
 
 **Anforderungen:**
 
-- Eine `div`-Box mit einer Klasse `.box`, um sie später mit CSS zu stylen.
+- Eine `div`-Box mit einer Klasse `box`, um sie später mit CSS zu stylen.
 - Eine `h1`-Überschrift für die App.
 
 > Die Box wird so erstmal nicht sichtbar sein, das ist gewollt.
