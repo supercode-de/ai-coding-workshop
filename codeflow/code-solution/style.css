@@ -1,0 +1,94 @@
+/* Farbvariablen für flexibles Styling */
+:root {
+  --white: #ffffff;
+  --primary: #5d3ede;
+  --secondary: #ded4eb;
+  --accent: #00ecaa;
+  --background: #070021;
+  --highlight: #ffda1a;
+  --text-primary: #070021;
+  --text-secondary: #5d3ede;
+}
+
+/* Basis-Styling */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--background),
+    var(--primary)
+  );
+  font-family: Arial, sans-serif;
+}
+
+/* User Card */
+.card {
+  display: flex;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Linke Seite: Profilbild */
+.card-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-left img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+}
+
+/* Rechte Seite: Informationen */
+.card-right {
+  width: 50%;
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Name */
+.card-right h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+/* Standort */
+.card-right p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* Kontakt-Link */
+.card-right a {
+  background: var(--accent);
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-right a:hover {
+  background: var(--highlight);
+  color: var(--text-primary);
+}
