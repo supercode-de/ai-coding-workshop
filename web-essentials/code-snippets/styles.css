@@ -1,0 +1,12 @@
+button {
+  color: white;
+  background: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.button--active {
+  background: green;
+}
