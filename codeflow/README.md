@@ -25,33 +25,35 @@ Ein Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch ver
 
 ---
 
-### **Ticket 2: Grundlegendes CSS für die User Card**
+## **Ticket 2: Grundlegendes CSS für die User Card hinzufügen**
 
-**Ziel:** Die User Card wird sichtbar und in eine Grundstruktur gebracht.
+**Ziel:** Die Karte sichtbar machen und die Struktur mit `display: flex` aufbauen.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Die `.card` bekommt eine feste **Breite und Höhe**.
+- `.card` bekommt eine feste **Breite (600px) und Höhe (200px)**.
 - Eine **sichtbare Umrandung** wird hinzugefügt.
-- `display: flex;` wird genutzt, um `.card-left` und `.card-right` nebeneinander anzuordnen.
-- Standard-Schriftart setzen.
-- `margin` und `padding` anpassen, um den Inhalt besser auszurichten.
-
-> Die Karte ist nun sichtbar, aber noch ohne Farben und Feinheiten.
+- Die Elemente `.card-left` und `.card-right` werden **nebeneinander** angeordnet.
+- Eine Standard-Schriftart wird gesetzt.
 
 ---
 
-### **Ticket 3: Profilbild sichtbar und richtig positionieren**
+## **Ticket 3: Profilbild und rechte Seite richtig positionieren**
 
-**Ziel:** Das Profilbild soll korrekt angezeigt werden.
+**Ziel:** Das Profilbild korrekt anzeigen und die rechte Seite (`.card-right`) ausrichten.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Die `img`-Größe in `.card-left` auf 100px x 100px begrenzen.
+- `.card-left` nimmt **50 % der Breite** ein.
+- `.card-left` wird mit `display: flex` ausgestattet.
+- Das Profilbild (`img`) bekommt eine feste Größe von **100px x 100px**.
+- Das Bild wird **zentriert ausgerichtet**.
+- `.card-right` nimmt ebenfalls **50 % der Breite** ein.
+- `.card-right` wird mit `display: flex`, `flex-direction: column` und `align-items: center` ausgerichtet.
 
 ---
 
-### **Ticket 4: Erste Farbgestaltung ohne Variablen**
+### **Ticket 4: Erste Farbgestaltung**
 
 **Ziel:** Die Karte soll erste Farben erhalten.
 
