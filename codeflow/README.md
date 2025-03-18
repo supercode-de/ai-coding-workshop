@@ -2,7 +2,20 @@
 
 Ein Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch verbessert wird.
 
+![User Card Preview](./assets/user-card-preview.png)
+
 ---
+
+Farben für dieses Projekt:
+
+- white: #ffffff
+- primary: #5d3ede
+- secondary: #ded4eb
+- accent: #00ecaa
+- background: #070021
+- highlight: #ffda1a
+- text-primary: #070021
+- text-secondary: #5d3ede
 
 ## **Feature-Liste & Implementierungsplan**
 
@@ -31,7 +44,7 @@ Ein Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch ver
 
 ### **Anforderungen:**
 
-- `.card` bekommt eine feste **Breite (600px) und Höhe (200px)**.
+- `.card` bekommt eine feste **Breite (400px) und Höhe (200px)**.
 - Eine **sichtbare Umrandung** wird hinzugefügt.
 - Die Elemente `.card-left` und `.card-right` werden **nebeneinander** angeordnet.
 - Eine Standard-Schriftart wird gesetzt.
@@ -53,92 +66,99 @@ Ein Web-Projekt zur Gestaltung einer **User Card**, die schrittweise optisch ver
 
 ---
 
-### **Ticket 4: Erste Farbgestaltung**
+## **Ticket 4: Erste Farbgestaltung**
 
 **Ziel:** Die Karte soll erste Farben erhalten.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Eine Hintergrundfarbe für `.card` setzen.
+- Eine transparente Hintergrundfarbe für `.card` setzen.
 - Die Schriftfarbe für `.card-right` anpassen.
-- Eine Kontrastfarbe für den Kontakt-Link.
+- Eine Kontrastfarbe für den Kontakt-Link setzen.
+- `.card-right` soll eine eigene Hintergrundfarbe erhalten.
 
 ---
 
-### **Ticket 5: Abrundungen und Schatten hinzufügen**
+## **Ticket 5: Abrundungen und Schatten hinzufügen**
 
 **Ziel:** Die Box wirkt weicher und plastischer.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Von `.card` die Ecken abrunden.
-- Schatten hinzufügen, um der Karte Tiefe zu geben.
+- `.card` soll abgerundete Ecken erhalten.
+- Ein Schatten soll hinzugefügt werden.
+- `.card` soll überlaufende Inhalte verbergen.
 
 ---
 
-### **Ticket 6: Profilbild abrunden & umrahmen**
+## **Ticket 6: Profilbild abrunden & umrahmen**
 
 **Ziel:** Das Bild soll sich besser ins Design einfügen.
 
-**Anforderungen:**
+### **Anforderungen:**
 
 - Das Bild soll rund erscheinen.
 - Einen Rahmen um das Bild setzen.
+- Sicherstellen, dass das Bild nicht verzerrt wird.
 
 ---
 
-### **Ticket 7: Typografie & Layout verfeinern**
+## **Ticket 7: Typografie & Layout verfeinern**
 
 **Ziel:** Die Lesbarkeit und das Layout optimieren.
 
-**Anforderungen:**
+### **Anforderungen:**
 
 - `h2`, `p` und `a` bekommen verbesserte Schriftgrößen.
-- Textfarben besser auf den Hintergrund abstimmen.
+- Textfarben werden besser auf den Hintergrund abgestimmt.
 - Abstände (`margin`, `padding`) für eine bessere Ausrichtung anpassen.
+- `.card-right` soll einen Innenabstand erhalten.
 
 ---
 
-### **Ticket 8: Semantische HTML-Tags einführen**
+## **Ticket 8: Semantische HTML-Tags einführen**
 
 **Ziel:** Die Struktur der HTML-Datei verbessern.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- `div` Element durch semtantische HTML5 Elemente ersetzen
-- Name als `h2`, Standort als `p` und Kontakt als `a` können bleiben
+- `div`-Elemente durch semantische HTML5-Elemente ersetzen.
+- Name bleibt als `h2`, Standort als `p` und Kontakt als `a`.
 
-> Optisch bleibt alles gleich, aber die Struktur wird sauberer.
+> **Hinweis:** Dieses Ticket hat **keinen Einfluss auf das Styling**.
 
 ---
 
-### **Ticket 9: Einführung von Farbvariablen**
+## **Ticket 9: Einführung von Farbvariablen**
 
 **Ziel:** Das Styling flexibler und anpassbarer machen.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Eine zentrale **Farbpalette** im `:root` definieren.
-- Alle bisherigen festen Farben durch **CSS-Variablen** ersetzen.
+- Eine zentrale Farbpalette definieren.
+- Alle bisherigen festen Farben durch CSS-Variablen ersetzen.
 
 ---
 
-### **Ticket 10: Hintergrund der Seite verbessern**
+## **Ticket 10: Hintergrund der Seite verbessern**
 
 **Ziel:** Der gesamte Hintergrund der Seite soll sich dem Design der Karte anpassen.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- Ein Farbverlauf für den `body`-Hintergrund.
-- Die `.card`-Hintergrundfarbe leicht transparent machen.
+- Ein Farbverlauf für den Hintergrund der Seite setzen.
+- Der `body` soll die `.card` mittig im Viewport ausrichten.
+- Der `body` soll die gesamte Höhe des Viewports einnehmen.
 
 ---
 
-### **Ticket 11: Button-Design verbessern**
+## **Ticket 11: Kontakt-Link verbessern**
 
-**Ziel:** Der Kontakt-Button soll sich optisch besser einfügen.
+**Ziel:** Der Kontakt-Link soll sich optisch besser einfügen.
 
-**Anforderungen:**
+### **Anforderungen:**
 
-- **Abgerundete Ecken** für den Button.
-- **Hover-Effekt**, der Farbe oder Schatten verändert.
+- Der Link soll eine Hintergrundfarbe erhalten.
+- Der Link soll durch Innenabstände (Padding) größer und klickbarer werden.
+- Die Ecken des Links abrunden.
+- Der Link soll eine sanfte Farbänderung erhalten, wenn man mit der Maus darüberfährt.
